@@ -1,4 +1,11 @@
+// screen sda A4, sck A5
+
+
+
+
 #include "U8glib.h"
+#include <SPI.h>
+#include <RF24.h>
 
 U8GLIB_SSD1306_128X64 u8g(0x3C);	// SW SPI Com: SCK = 13, MOSI = 11, CS = 10, A0 = 9
 
@@ -10,48 +17,53 @@ int encoder0Pos = 0;
 int valRotary,lastValRotary;
 
 typedef enum  {
+  MODE_ONE,
+  MODE_TWO,
+  MODE_THREE
+}ledMode;
+
+typedef struct _toSend toSend;
+
+struct _toSend{
+  int power;
+  ledMode mode;
+  boolean isRestricted;
+  int brightness;
+};
+
+
+typedef enum  {
   RIDE_MODE,
   LED_MODE
 }MenuMode;
 
+void printTextOnPos(short x, short y, String toPrint){
+  u8g.setPrintPos(x, y);
+  u8g.print(toPrint);
+}
+
 void draw(int val, int checked) {
-  // graphic commands to redraw the complete screen should be placed here
   u8g.setFont(u8g_font_8x13);
-   
-  // call procedure from base class, http://arduino.cc/en/Serial/Print
-  u8g.setPrintPos(5, 10);
-  u8g.print("normal");
-  u8g.setPrintPos(90, 10);
-  u8g.print("100%");
-  u8g.setFont(u8g_font_8x13);
-  u8g.setPrintPos(5, 35);
-  u8g.print("power");
+  printTextOnPos(5, 10, "normal");
+  printTextOnPos(90, 10, "100%");
+  printTextOnPos(5, 35, "power");
   u8g.setFont(u8g_font_9x15);
-  u8g.setPrintPos(10, 50);
-  if (val < 0) {
-    val = 0;
-  }
-  else if (val > 100) {
-    val = 100;
-  }
   char intStr[16];
   itoa(val, intStr, 10);
   String str = String(intStr);
   str += "%";
-  u8g.print(str);
-  MenuMode mode = checked;
+  printTextOnPos(10, 50, str);
+  MenuMode mode = (MenuMode)checked;
   switch (mode) {
     case RIDE_MODE: {
       u8g.setFont(u8g_font_8x13);
-      u8g.setPrintPos(80, 35);
-      u8g.print("ride");
+      printTextOnPos(80, 35, "ride");
       u8g.setPrintPos(77, 50);
       break;
     }
     case LED_MODE: {
       u8g.setFont(u8g_font_6x10);
-      u8g.setPrintPos(88, 35);
-      u8g.print("LED");
+      printTextOnPos(88, 35, "LED");
       u8g.setPrintPos(77, 50);
       u8g.setFont(u8g_font_8x13);
       break;
@@ -94,6 +106,12 @@ void loop(void) {
   Serial.println(" ");
   u8g.firstPage();  
   do {
+    if(valRotary > 100){
+      valRotary = 100;
+    }
+    else if(valRotary < 0){
+      valRotary = 0;
+    }
    draw(valRotary, led_flag);
   } while( u8g.nextPage() );
   
