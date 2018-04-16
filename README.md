@@ -8,7 +8,7 @@ _WoodpeckerX – futuristic electric longboard by SkateX team. WoodpeckerX is a 
 * [Mironenko Andrey](https://github.com/andrewms2013) – Programmer
 * [Manohin Andrey](https://github.com/andreyTheGreatest) – Programmer
 * [Krutiy Dmitriy](https://github.com/solosuic1de) a.k.a. solosuicide – QA
-* [Kruchek Evgeniy](https://github.com/kostiaLelikov1/Electric-longboard) a.k.a. super star – Tester
+* [Kruchek Evgeniy](https://github.com/jekson116) a.k.a. super star – Tester
 ## Product info  
 #### [Product backlog](https://docs.google.com/spreadsheets/d/1xxkGlk2hjKkQS1MSRXkc62yn5U38qhXYwr5ac_axtIg/edit#gid=0)
 #### [Presentation](https://docs.google.com/presentation/d/1o4HtbTpDQHj44VpTtHM0bb8bDkfQZvOu_UuFTB63brw/edit?hl=en#slide=id.p)
