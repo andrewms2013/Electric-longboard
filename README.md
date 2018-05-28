@@ -9,7 +9,7 @@ _WoodpeckerX – futuristic electric longboard by SkateX team. WoodpeckerX is a 
 * [Manohin Andrey](https://github.com/andreyTheGreatest) – Programmer
 * [Krutiy Dmitriy](https://github.com/solosuic1de) a.k.a. solosuicide – QA
 * [Kruchek Evgeniy](https://github.com/jekson116) a.k.a. super star – Tester
-## Product info  
+## Scrum Artifacts
 #### [Product backlog](https://docs.google.com/spreadsheets/d/1xxkGlk2hjKkQS1MSRXkc62yn5U38qhXYwr5ac_axtIg/edit#gid=0)
 #### [Presentation](https://docs.google.com/presentation/d/1o4HtbTpDQHj44VpTtHM0bb8bDkfQZvOu_UuFTB63brw/edit?hl=en#slide=id.p)
 ### First sprint
@@ -19,3 +19,6 @@ _WoodpeckerX – futuristic electric longboard by SkateX team. WoodpeckerX is a 
 ### Second sprint
 #### [Second sprint planing](https://docs.google.com/document/d/1428_qkWQeknMYFGGXQ5bzrGk_VYAX8Hp34I7HpldqN4/)
 #### [Second sprint backlog](https://docs.google.com/spreadsheets/d/1xxkGlk2hjKkQS1MSRXkc62yn5U38qhXYwr5ac_axtIg/edit#gid=425177193)
+#### [Second sprint demo](https://docs.google.com/presentation/d/1lGmtDzmpLtdN30ApqFl8LyvYJNuLPjPRA0mJFqYZqxs/edit?usp=sharing)
+## Product info  
+#### [Project documentation](https://github.com/progbase/Electric-longboard/wiki)
