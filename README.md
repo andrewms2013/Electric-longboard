@@ -21,4 +21,5 @@ _WoodpeckerX – futuristic electric longboard by SkateX team. WoodpeckerX is a 
 #### [Second sprint backlog](https://docs.google.com/spreadsheets/d/1xxkGlk2hjKkQS1MSRXkc62yn5U38qhXYwr5ac_axtIg/edit#gid=425177193)
 #### [Second sprint demo](https://docs.google.com/presentation/d/1lGmtDzmpLtdN30ApqFl8LyvYJNuLPjPRA0mJFqYZqxs/edit?usp=sharing)
 ## Product info  
-#### [Project documentation](https://github.com/progbase/Electric-longboard/wiki)
+#### [Product documentation](https://github.com/progbase/Electric-longboard/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0-%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0)
+#### [Product demo video](https://drive.google.com/open?id=1aqvSdRRg43BPn8l3zXRBF7AayMHzpDEF)
